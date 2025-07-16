@@ -10,7 +10,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   const year = new Date().getFullYear();
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col">
       
       {/* Top Navigation */}
       <header className="flex justify-between items-center px-4 py-3 bg-white shadow-md">
