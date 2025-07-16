@@ -20,7 +20,7 @@ const FormLayout: React.FC = () => {
   const [hasStarted, setHasStarted] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
-  const { answers, submitAnswer, generateResult, reset } = useQuiz();
+  const { answers, submitAnswer, generateResult } = useQuiz();
 
   const currentQuestion = questions[currentIndex];
   const answerForCurrent = answers.find(
