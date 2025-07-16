@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AppLayout from '@/components/AppLayout';
 import QuizPage from '@/pages/QuizPage';
 import ResultPage from '@/pages/ResultPage';
@@ -10,10 +10,11 @@ const App: React.FC = () => {
     <Router basename="/react_transito_app/">
       <AppLayout>
         <Routes>
-          <Route path="/" element={<QuizPage />} />
+          <Route path="/" element={<Navigate to="/quiz" />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/resultado" element={<ResultPage />} />
           <Route path="/acerca-de" element={<AboutPage />} />
+          <Route path="*" element={<Navigate to="/quiz" />} />
         </Routes>
       </AppLayout>
     </Router>

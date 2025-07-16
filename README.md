@@ -1,76 +1,76 @@
 # Tránsito Higüey App
 
-Interactive traffic education quiz application for Higüey, Dominican Republic. Built with React, TypeScript, and Vite.
+Aplicación interactiva de educación vial para Higüey, República Dominicana. Desarrollada con React, TypeScript y Vite.
 
-## Features
+## Características
 
-- Interactive traffic knowledge quiz
-- Progress tracking and scoring
-- Personalized results and recommendations
-- Responsive design with Tailwind CSS
-- Local storage for user results
-- Smooth animations with Framer Motion
+- Cuestionario interactivo de conocimientos de tránsito
+- Seguimiento de progreso y puntuación
+- Resultados personalizados y recomendaciones
+- Diseño responsivo con Tailwind CSS
+- Almacenamiento local para resultados de usuario
+- Animaciones suaves con Framer Motion
 
-## Tech Stack
+## Stack Tecnológico
 
 - React 18 + TypeScript
-- Vite for build tooling
-- Redux Toolkit for state management
-- Tailwind CSS for styling
-- Framer Motion for animations
-- Recharts for data visualization
+- Vite para herramientas de construcción
+- Redux Toolkit para manejo de estado
+- Tailwind CSS para estilos
+- Framer Motion para animaciones
+- Recharts para visualización de datos
 
-## Getting Started
+## Comenzar
 
-1. Install dependencies:
+1. Instalar dependencias:
 ```bash
 npm install
 ```
 
-2. Start development server:
+2. Iniciar servidor de desarrollo:
 ```bash
 npm run dev
 ```
 
-3. Build for production:
+3. Construir para producción:
 ```bash
 npm run build
 ```
 
-## Available Scripts
+## Scripts Disponibles
 
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production (TypeScript compilation + Vite build)
-- `npm run lint` - Run ESLint for code quality checks
-- `npm run preview` - Preview production build locally
+- `npm run dev` - Iniciar servidor de desarrollo con recarga automática
+- `npm run build` - Construir para producción (compilación TypeScript + construcción Vite)
+- `npm run lint` - Ejecutar ESLint para verificaciones de calidad de código
+- `npm run preview` - Previsualizar construcción de producción localmente
 
-## Project Structure
+## Estructura del Proyecto
 
-- `/src/components` - Reusable UI components
-- `/src/pages` - Page components
-- `/src/store` - Redux store and slices
-- `/src/services` - Business logic services
-- `/src/utils` - Utility functions and quiz data
-- `/src/hooks` - Custom React hooks
-- `/src/context` - React context providers
-- `/src/models` - TypeScript type definitions
+- `/src/components` - Componentes UI reutilizables
+- `/src/pages` - Componentes de páginas
+- `/src/store` - Store Redux y slices
+- `/src/services` - Servicios de lógica de negocio
+- `/src/utils` - Funciones utilitarias y datos del cuestionario
+- `/src/hooks` - Hooks personalizados de React
+- `/src/context` - Proveedores de contexto de React
+- `/src/models` - Definiciones de tipos TypeScript
 
-## Architecture
+## Arquitectura
 
-### Frontend Architecture
-- **Component-Based**: Modular React components with TypeScript
-- **State Management**: Redux Toolkit for global state
-- **Routing**: React Router for navigation
-- **Styling**: Tailwind CSS with responsive design
-- **Animations**: Framer Motion for smooth transitions
+### Arquitectura Frontend
+- **Basada en Componentes**: Componentes modulares de React con TypeScript
+- **Manejo de Estado**: Redux Toolkit para estado global
+- **Enrutamiento**: React Router para navegación
+- **Estilos**: Tailwind CSS con diseño responsivo
+- **Animaciones**: Framer Motion para transiciones suaves
 
-### Key Patterns
-- **Custom Hooks**: Encapsulated logic (useQuiz, useSnackbar)
-- **Context API**: Theme and notification management
-- **Service Layer**: Business logic separation (QuizService)
-- **Local Storage**: Persistent user results
-- **Type Safety**: Full TypeScript implementation
+### Patrones Clave
+- **Hooks Personalizados**: Lógica encapsulada (useQuiz, useSnackbar)
+- **Context API**: Manejo de tema y notificaciones
+- **Capa de Servicios**: Separación de lógica de negocio (QuizService)
+- **Local Storage**: Resultados persistentes de usuario
+- **Seguridad de Tipos**: Implementación completa de TypeScript
 
-## Academic Project
+## Proyecto Académico
 
-Developed by Sarai Rodríguez and Joan Vásquez as a final project for Management Informatics at Universidad Abierta para Adultos (UAPA), under the guidance of Professor Maria Aurellina Agramonte Pimentel.
+Desarrollado por Sarai Rodríguez y Joan Vásquez como proyecto final de Informática Gerencial en la Universidad Abierta para Adultos (UAPA), bajo la guía de la profesora Maria Aurellina Agramonte Pimentel.
