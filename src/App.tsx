@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import AppLayout from '@/components/AppLayout';
 import QuizPage from '@/pages/QuizPage';
 import ResultPage from '@/pages/ResultPage';
@@ -7,7 +7,7 @@ import AboutPage from '@/pages/AboutPage';
 
 const App: React.FC = () => {
   return (
-    <Router basename="/react_transito_app/">
+    <Router>
       <AppLayout>
         <Routes>
           <Route path="/" element={<Navigate to="/quiz" />} />
