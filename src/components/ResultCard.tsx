@@ -69,7 +69,7 @@ const ResultCard: React.FC<ResultCardProps> = ({ result, onReset }) => {
               dataKey="value"
               label
             >
-              {chartData.map((entry, index) => (
+              {chartData.map((_, index) => (
                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
               ))}
             </Pie>

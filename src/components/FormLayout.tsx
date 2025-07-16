@@ -79,15 +79,6 @@ const FormLayout: React.FC = () => {
     setCurrentIndex((prev) => Math.max(0, prev - 1));
   }, []);
 
-  const handleReset = useCallback(() => {
-    reset();
-    setCurrentIndex(0);
-    setErrors({});
-    setUserName("");
-    setHasStarted(false);
-    showMessage("Cuestionario reiniciado.", "warning");
-  }, [reset, showMessage]);
-
   const handleStart = useCallback(() => {
     if (!userName.trim()) {
       showMessage("Debes ingresar tu nombre antes de comenzar.", "warning");
