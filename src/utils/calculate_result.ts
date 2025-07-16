@@ -2,21 +2,22 @@ import type { Question, Answer, QuizResult, QuizResultLevel } from '@/models/qui
 
 const messages: Record<QuizResultLevel, string[]> = {
   excelente: [
-    "¡Excelente! Eres un ejemplo en las vías, sigue así.",
-    "¡Perfecto! Demuestras una gran conciencia y responsabilidad vial.",
-    "¡Muy bien! Mantén esa actitud positiva al conducir."
+    "¡Excelente! Eres un verdadero ejemplo de responsabilidad y respeto en las vías. Continúa aplicando estos conocimientos y contribuyendo a una movilidad más segura en tu comunidad.",
+    "¡Perfecto! Demuestras una gran conciencia vial y un compromiso con las normas de tránsito. Tu actitud es fundamental para prevenir accidentes y promover una cultura vial positiva.",
+    "¡Muy bien! Has alcanzado un nivel sobresaliente en conocimientos de tránsito. Mantén esta actitud y no dejes de actualizarte en temas de seguridad vial."
   ],
   bueno: [
-    "Bien hecho, pero aún puedes mejorar en algunos aspectos.",
-    "Tu conciencia vial es aceptable, sigue informándote y mejorando.",
-    "Buen trabajo, aunque todavía hay detalles que deberías reforzar."
+    "Buen trabajo. Tu desempeño es bueno, pero todavía hay algunos aspectos en los que podrías mejorar. Te animamos a seguir aprendiendo y reforzando tu conocimiento de las normas viales.",
+    "Tu conciencia vial es aceptable y muestra una buena base. Sin embargo, prestar atención a los detalles y mantenerte actualizado hará que seas un conductor o peatón aún más responsable.",
+    "Vas por buen camino. Aun así, es importante que repases ciertas normas y recomendaciones. La educación vial continua es clave para mejorar tu seguridad y la de los demás."
   ],
   advertencia: [
-    "Cuidado, necesitas mejorar tus hábitos en las vías.",
-    "Es importante que refuerces tus conocimientos sobre normas de tránsito.",
-    "Tu nivel es preocupante, busca asesoría y capacítate cuanto antes."
+    "¡Atención! Tu nivel de conocimiento sobre normas viales es bajo y eso puede representar un riesgo. Te recomendamos tomar medidas inmediatas para aprender y aplicar las reglas de tránsito.",
+    "Cuidado. Has obtenido un resultado preocupante. Es fundamental que refuerces tus conocimientos y mejores tus hábitos en la vía para proteger tu vida y la de los demás.",
+    "Tu evaluación indica deficiencias importantes en seguridad vial. Considera formarte con material educativo o cursos especializados. Cada mejora que hagas puede prevenir un accidente."
   ],
 };
+
 
 function getRandomMessage(level: QuizResultLevel): string {
   const options = messages[level];

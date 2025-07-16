@@ -36,8 +36,8 @@ const ResultCard: React.FC<ResultCardProps> = ({ result, onReset }) => {
   }, [result.level]);
 
   const chartData = useMemo(() => [
-    { name: 'Correctas', value: result.score },
-    { name: 'Incorrectas', value: 100 - result.score },
+    { name: 'Correctas', value: parseFloat(result.score.toFixed(2)) },
+    { name: 'Incorrectas', value: parseFloat((100 - result.score).toFixed(2)) },
   ], [result.score]);
 
   return (

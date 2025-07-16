@@ -12,7 +12,7 @@ const AboutPage: React.FC = () => {
         <strong>Joan Vásquez</strong>, estudiantes de la{" "}
         <strong>Universidad Abierta para Adultos (UAPA)</strong>, como proyecto final de{" "}
         <strong>Informática Gerencial</strong> bajo la tutoría de la profesora{" "}
-        <strong>Maria Aurellina Agramonte Pimentel</strong>.
+        <strong>Reyna Hiraldo Trejo</strong>.
       </p>
 
       <p className="text-justify leading-relaxed">
