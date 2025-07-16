@@ -7,7 +7,7 @@ import AboutPage from '@/pages/AboutPage';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/react_transito_app/">
       <AppLayout>
         <Routes>
           <Route path="/" element={<QuizPage />} />
