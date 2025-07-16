@@ -1,10 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚦</text></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tránsito Higüey App</title>
+
+    <script>
+      // Redirigir automáticamente a versión con hash si accede directamente sin él
+      if (!location.hash && location.pathname.includes('react_transito_app')) {
+        const path = location.pathname.replace('/react_transito_app/', '');
+        location.replace(`/react_transito_app/#/${path}`);
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
